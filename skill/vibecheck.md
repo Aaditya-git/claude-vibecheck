@@ -136,6 +136,18 @@ Makes sense, or want me to dig into any part?
 
 ---
 
+### Middleware chain — order matters
+
+Claude adds rate limiting middleware to an Express app. Vibecheck fires:
+
+---
+
+This adds rate limiting before the auth middleware in the chain. Valid requests are counted toward the limit whether or not they are authenticated — so a user who is rate-limited will get 429 before the server even checks their token. The non-obvious part: if you move this middleware after auth, unauthenticated requests still hit your server but won't count against authenticated users' limits. The order determines whose requests are bucketed together.
+
+Makes sense, or want me to dig into any part?
+
+---
+
 ## Skip behavior
 
 If the user replies with any of the following, respect it immediately and continue without explanation:
