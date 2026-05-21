@@ -1,6 +1,7 @@
 {
   "name": "vibecheck",
   "description": "Automatically narrates non-obvious code Claude writes in plain English — before you move on. Fires on async race conditions, auth flows, silent failures, and more. Stays silent on trivial changes.",
+  "version": "1.0.0",
   "author": {
     "name": "Aaditya Bhilegaonkar"
   }
