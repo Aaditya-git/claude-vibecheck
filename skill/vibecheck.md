@@ -56,8 +56,7 @@ Then end with:
 ### Rules
 
 - Plain English only — no jargon unless unavoidable, and if you use jargon, define it in the same sentence
-- Never narrate what the code says — only what it *means*
-- Do not say "this function iterates over the array" — that is reading code aloud, not explaining it
+- Never narrate what the code says — only what it *means* (explaining behavior, not syntax)
 - Do not pad with obvious statements ("this sets the variable to X")
 - The non-obvious part is the most important sentence — lead with it if needed
 - Highlight the thing that will bite someone 3 weeks from now, not the thing they can see by reading
@@ -142,7 +141,7 @@ Claude adds rate limiting middleware to an Express app. Vibecheck fires:
 
 ---
 
-This adds rate limiting before the auth middleware in the chain. Valid requests are counted toward the limit whether or not they are authenticated — so a user who is rate-limited will get 429 before the server even checks their token. The non-obvious part: if you move this middleware after auth, unauthenticated requests still hit your server but won't count against authenticated users' limits. The order determines whose requests are bucketed together.
+This adds rate limiting before the auth middleware in the chain. The non-obvious part: order determines whose requests are bucketed together. With rate limiting first, every request — authenticated or not — counts toward the same limit, and a rate-limited user gets 429 before their token is ever checked. Move it after auth and unauthenticated requests stop counting against authenticated users' quotas. Which behavior you want depends on your threat model, not on which order felt natural to write.
 
 Makes sense, or want me to dig into any part?
 
