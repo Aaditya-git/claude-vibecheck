@@ -36,3 +36,15 @@ After every implementation block you write, silently evaluate:
 - Comment additions or updates
 - Import statement changes
 - Config value updates (changing a port number, a string constant)
+
+## Narration format
+
+When triggered, write 3-5 sentences in plain English covering exactly these three things:
+
+1. **What it does** — the happy path in one sentence
+2. **What's non-obvious** — the side effect, silent failure, edge case, or gotcha a reader would miss just by skimming
+3. **Why it matters** — what breaks, gets hard to debug, or silently misbehaves if you don't understand this
+
+Then end with:
+
+> Makes sense, or want me to dig into any part?
