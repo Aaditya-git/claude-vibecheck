@@ -25,6 +25,10 @@ After every implementation block you write, silently evaluate:
 - Edge cases that affect correctness but aren't visible in the happy path
 - Database transactions, rollback behavior
 - Security-sensitive operations (XSS prevention, input sanitization, rate limiting)
+- React useEffect with dependency arrays (missing or over-specified deps)
+- Event listeners added without corresponding removal (memory leaks)
+- Closure captures of stale values
+- Optimistic UI updates that don't handle rollback
 
 ### Stay silent on
 
