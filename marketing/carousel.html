@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>vibecheck — LinkedIn Carousel</title>
+  <title>vibecheck: LinkedIn Carousel</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,7 +27,7 @@
       margin-left: calc(50% - 540px);
     }
 
-    /* ── SLIDE BASE ── */
+    /* SLIDE BASE */
     .slide {
       width: 1080px;
       height: 1080px;
@@ -67,9 +67,9 @@
       opacity: 0.4;
     }
 
-    /* ── SLIDE 1 — DARK + NEON ── */
+    /* SLIDE 1 */
     .s1 {
-      background: #0a0a0a;
+      background: #0a0010;
       color: #fff;
       justify-content: flex-start;
       padding-top: 90px;
@@ -79,7 +79,7 @@
       font-weight: 600;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #00ff87;
+      color: #a78bfa;
       margin-bottom: 36px;
     }
     .s1 .headline {
@@ -88,7 +88,7 @@
       line-height: 1.05;
       margin-bottom: 48px;
     }
-    .s1 .headline em { color: #00ff87; font-style: normal; }
+    .s1 .headline em { color: #a78bfa; font-style: normal; }
     .s1 .scene {
       display: flex;
       gap: 0;
@@ -104,7 +104,7 @@
       padding: 28px 16px;
       border-radius: 16px;
     }
-    .s1 .moment:nth-child(2) { background: #111; }
+    .s1 .moment:nth-child(2) { background: #0f001e; }
     .s1 .emoji { font-size: 52px; }
     .s1 .caption {
       font-size: 16px;
@@ -118,13 +118,13 @@
       font-weight: 700;
       color: #555;
     }
-    .s1 .tagline em { color: #00ff87; font-style: normal; }
-    .s1 .brand { color: #00ff87; }
+    .s1 .tagline em { color: #a78bfa; font-style: normal; }
+    .s1 .brand { color: #a78bfa; }
 
-    /* ── SLIDE 2 — PROBLEM ── */
+    /* SLIDE 2 */
     .s2 {
       background: #fff;
-      color: #0a0a0a;
+      color: #0a0010;
     }
     .s2 .tag {
       font-size: 14px;
@@ -138,13 +138,13 @@
       font-size: 120px;
       font-weight: 900;
       line-height: 1;
-      color: #0a0a0a;
+      color: #0a0010;
       margin-bottom: 16px;
     }
     .s2 .stat-label {
       font-size: 28px;
       font-weight: 700;
-      color: #0a0a0a;
+      color: #0a0010;
       margin-bottom: 48px;
     }
     .s2 .detail {
@@ -154,12 +154,12 @@
       line-height: 1.6;
       max-width: 700px;
     }
-    .s2 .detail strong { color: #0a0a0a; }
+    .s2 .detail strong { color: #0a0010; }
     .s2 .brand { color: #999; }
 
-    /* ── SLIDE 3 — HOW IT WORKS ── */
+    /* SLIDE 3 */
     .s3 {
-      background: #0a0a0a;
+      background: #0a0010;
       color: #fff;
     }
     .s3 .tag {
@@ -167,7 +167,7 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #00ff87;
+      color: #a78bfa;
       margin-bottom: 48px;
     }
     .s3 .headline {
@@ -188,15 +188,15 @@
       display: flex;
       align-items: flex-start;
       gap: 24px;
-      background: #141414;
+      background: #130025;
       border-radius: 16px;
       padding: 28px 32px;
-      border-left: 4px solid #00ff87;
+      border-left: 4px solid #7c3aed;
     }
     .s3 .step-num {
       font-size: 32px;
       font-weight: 900;
-      color: #00ff87;
+      color: #a78bfa;
       line-height: 1;
       flex-shrink: 0;
       width: 40px;
@@ -208,12 +208,12 @@
       line-height: 1.4;
     }
     .s3 .step-text span { color: #777; font-weight: 400; }
-    .s3 .brand { color: #00ff87; }
+    .s3 .brand { color: #a78bfa; }
 
-    /* ── SLIDE 4 — EXAMPLE ── */
+    /* SLIDE 4 */
     .s4 {
       background: #fff;
-      color: #0a0a0a;
+      color: #0a0010;
       padding: 64px 72px;
     }
     .s4 .tag {
@@ -245,7 +245,7 @@
       text-transform: uppercase;
     }
     .s4 .col-label.bad { color: #ff4444; }
-    .s4 .col-label.good { color: #00b860; }
+    .s4 .col-label.good { color: #7c3aed; }
     .s4 .bubble {
       background: #f5f5f5;
       border-radius: 16px;
@@ -258,7 +258,7 @@
       flex: 1;
     }
     .s4 .bubble.bad { border-top: 4px solid #ff4444; }
-    .s4 .bubble.good { border-top: 4px solid #00b860; }
+    .s4 .bubble.good { border-top: 4px solid #7c3aed; }
     .s4 .bubble .who {
       font-size: 13px;
       font-weight: 700;
@@ -268,7 +268,7 @@
       margin-bottom: 12px;
     }
     .s4 .bubble .msg { font-size: 19px; }
-    .s4 .bubble .msg em { font-style: normal; font-weight: 700; color: #0a0a0a; }
+    .s4 .bubble .msg em { font-style: normal; font-weight: 700; color: #0a0010; }
     .s4 .bubble .result {
       margin-top: 20px;
       font-size: 15px;
@@ -278,7 +278,7 @@
       display: inline-block;
     }
     .s4 .bubble .result.bad { background: #ffe5e5; color: #cc0000; }
-    .s4 .bubble .result.good { background: #e5f7ee; color: #00703a; }
+    .s4 .bubble .result.good { background: #ede9fe; color: #5b21b6; }
     .s4 .divider {
       display: flex;
       align-items: center;
@@ -290,17 +290,74 @@
     }
     .s4 .brand { color: #999; }
 
-    /* ── SLIDE 5 — CTA ── */
+    /* SLIDE 5 - OBJECTION */
+    .s_obj {
+      background: #0a0010;
+      color: #fff;
+      align-items: flex-start;
+      padding-top: 80px;
+    }
+    .obj-tag {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 24px;
+      align-self: flex-start;
+    }
+    .obj-q {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.05;
+      color: #fff;
+      margin-bottom: 52px;
+      text-align: left;
+    }
+    .obj-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    .obj-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      background: #0f001e;
+      border-radius: 16px;
+      padding: 24px 28px;
+      border-left: 4px solid #7c3aed;
+    }
+    .obj-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      width: 36px;
+      text-align: center;
+      margin-top: 2px;
+    }
+    .obj-text {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .obj-text strong { font-weight: 800; color: #a78bfa; }
+    .obj-text span { color: #666; font-size: 16px; }
+    .s_obj .brand { color: #a78bfa; }
+
+    /* SLIDE 6 - CTA */
     .s5 {
-      background: #00ff87;
-      color: #0a0a0a;
+      background: #7c3aed;
+      color: #fff;
     }
     .s5 .tag {
       font-size: 14px;
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: #007a3e;
+      color: rgba(255,255,255,0.6);
       margin-bottom: 48px;
     }
     .s5 .headline {
@@ -308,17 +365,17 @@
       font-weight: 900;
       line-height: 1.05;
       margin-bottom: 16px;
-      color: #0a0a0a;
+      color: #fff;
     }
     .s5 .sub {
       font-size: 26px;
       font-weight: 600;
-      color: #007a3e;
+      color: rgba(255,255,255,0.7);
       margin-bottom: 56px;
     }
     .s5 .install {
-      background: #0a0a0a;
-      color: #00ff87;
+      background: #0a0010;
+      color: #a78bfa;
       font-family: 'JetBrains Mono', monospace;
       font-size: 20px;
       font-weight: 700;
@@ -337,16 +394,16 @@
       justify-content: center;
     }
     .s5 .pill {
-      background: rgba(0,0,0,0.12);
-      color: #007a3e;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
       font-size: 16px;
       font-weight: 700;
       padding: 10px 22px;
       border-radius: 999px;
     }
-    .s5 .brand { color: #007a3e; }
+    .s5 .brand { color: rgba(255,255,255,0.5); }
 
-    /* ── PRINT ── */
+    /* PRINT */
     @media print {
       body { background: white; padding: 0; gap: 0; }
       .slide-label { display: none; }
@@ -356,10 +413,10 @@
 </head>
 <body>
 
-  <p class="slide-label">Slide 1 of 5 — screenshot each slide or File → Print → Save as PDF</p>
+  <p class="slide-label">Slide 1 of 6 | screenshot each slide or File > Print > Save as PDF</p>
 
-  <!-- ═══════════════════════════════════════════════════ SLIDE 1 -->
-  <div class="slide s1" data-num="1 / 5">
+  <!-- SLIDE 1 -->
+  <div class="slide s1" data-num="1 / 6">
     <span class="brand">vibecheck</span>
     <div class="eyebrow">be honest</div>
     <div class="headline">is this<br/><em>you?</em></div>
@@ -387,10 +444,10 @@
     <div class="tagline">swipe to meet your <em>new accountability buddy →</em></div>
   </div>
 
-  <p class="slide-label">Slide 2 of 5</p>
+  <p class="slide-label">Slide 2 of 6</p>
 
-  <!-- ═══════════════════════════════════════════════════ SLIDE 2 -->
-  <div class="slide s2" data-num="2 / 5">
+  <!-- SLIDE 2 -->
+  <div class="slide s2" data-num="2 / 6">
     <span class="brand">vibecheck</span>
     <div class="tag">the real problem</div>
     <div class="stat">80%</div>
@@ -398,43 +455,43 @@
     <div class="detail">
       It's not that Claude writes bad code.<br/>
       It's that <strong>we stopped reading</strong> what it writes.<br/><br/>
-      Vibe coding is fun — until it's<br/>
+      Vibe coding is fun. Until it's<br/>
       <strong>3am and production is on fire.</strong>
     </div>
   </div>
 
-  <p class="slide-label">Slide 3 of 5</p>
+  <p class="slide-label">Slide 3 of 6</p>
 
-  <!-- ═══════════════════════════════════════════════════ SLIDE 3 -->
-  <div class="slide s3" data-num="3 / 5">
+  <!-- SLIDE 3 -->
+  <div class="slide s3" data-num="3 / 6">
     <span class="brand">vibecheck</span>
     <div class="tag">how it works</div>
     <div class="headline">claude explains<br/>what it just wrote.<br/>automatically.</div>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <div class="step-text">Claude writes non-obvious code <span>— async logic, auth, silent failures, state mutations</span></div>
+        <div class="step-text">Claude writes non-obvious code <span>: async logic, auth, silent failures, state mutations</span></div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <div class="step-text">vibecheck fires — plain English narration, no jargon, highlights the thing that'll bite you later</div>
+        <div class="step-text">vibecheck fires: plain English narration, no jargon, highlights the thing that'll bite you later</div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div class="step-text">You actually understand what you shipped <span>— type "skip" anytime if you already get it</span></div>
+        <div class="step-text">You actually understand what you shipped. <span>Type "skip" anytime if you already get it.</span></div>
       </div>
     </div>
   </div>
 
-  <p class="slide-label">Slide 4 of 5</p>
+  <p class="slide-label">Slide 4 of 6</p>
 
-  <!-- ═══════════════════════════════════════════════════ SLIDE 4 -->
-  <div class="slide s4" data-num="4 / 5">
+  <!-- SLIDE 4 -->
+  <div class="slide s4" data-num="4 / 6">
     <span class="brand">vibecheck</span>
     <div class="tag">real example</div>
     <div class="cols">
       <div class="col">
-        <div class="col-label bad">❌ without vibecheck</div>
+        <div class="col-label bad">without vibecheck</div>
         <div class="bubble bad">
           <div class="who">Claude</div>
           <div class="msg">wrote a function that deletes the user account and all associated data.</div>
@@ -445,22 +502,49 @@
       </div>
       <div class="divider">→</div>
       <div class="col">
-        <div class="col-label good">✅ with vibecheck</div>
+        <div class="col-label good">with vibecheck</div>
         <div class="bubble good">
           <div class="who">vibecheck</div>
           <div class="msg">This deletes the account <em>and all their data. Immediately. No soft delete, no recovery window.</em> Hope you meant that.</div>
           <div class="who" style="margin-top:20px">You</div>
-          <div class="msg">"oh wait — add a soft delete first 😅"</div>
+          <div class="msg">"oh wait, add a soft delete first 😅"</div>
           <div class="result good">crisis avoided. user stays.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <p class="slide-label">Slide 5 of 5</p>
+  <p class="slide-label">Slide 5 of 6</p>
 
-  <!-- ═══════════════════════════════════════════════════ SLIDE 5 -->
-  <div class="slide s5" data-num="5 / 5">
+  <!-- SLIDE 5 - OBJECTION -->
+  <div class="slide s_obj" data-num="5 / 6">
+    <span class="brand">vibecheck</span>
+    <div class="obj-tag">but wait.</div>
+    <div class="obj-q">"why not just<br/>ask Claude Code?"</div>
+    <div class="obj-rows">
+      <div class="obj-row">
+        <div class="obj-icon">😶</div>
+        <div class="obj-text"><strong>you forget.</strong> every single time.<br/><span>that's literally the whole problem.</span></div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-icon">⚡</div>
+        <div class="obj-text"><strong>vibecheck fires automatically.</strong><br/><span>no "hey can you explain this?" needed. it just happens.</span></div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-icon">👥</div>
+        <div class="obj-text"><strong>it's a team standard.</strong><br/><span>one install. everyone on the team gets it. every session.</span></div>
+      </div>
+      <div class="obj-row">
+        <div class="obj-icon">🔕</div>
+        <div class="obj-text"><strong>silent on obvious code.</strong><br/><span>only fires when something could actually bite you later.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="slide-label">Slide 6 of 6</p>
+
+  <!-- SLIDE 6 -->
+  <div class="slide s5" data-num="6 / 6">
     <span class="brand">vibecheck</span>
     <div class="tag">install now</div>
     <div class="headline">stop shipping<br/>black boxes.</div>
