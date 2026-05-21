@@ -17,3 +17,19 @@ If **yes** → vibecheck narrates it in plain English: what it does, what's non-
 If **no** → complete silence. Trivial changes pass through without interruption.
 
 You can always type `skip` or `got it` to move on. Skipping is a conscious choice — fundamentally different from passively clicking yes without reading.
+
+## Example
+
+You ask Claude to add JWT auth. It writes 35 lines of middleware. Instead of silently moving on:
+
+```
+This middleware validates the Bearer token on every request before it reaches your 
+route handlers. Valid token → passes through. The non-obvious part: expired tokens 
+return 401 silently — there is no refresh attempt here. That is intentional (refresh 
+is the client's job), but if you expect silent token renewal, requests will start 
+failing without an obvious error message to trace.
+
+Makes sense, or want me to dig into any part?
+```
+
+You now know your auth works. You know where it doesn't. You can debug it when something goes wrong.
