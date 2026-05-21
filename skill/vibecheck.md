@@ -114,6 +114,18 @@ Makes sense, or want me to dig into any part?
 
 ---
 
+### Input sanitization / XSS prevention
+
+Claude writes a function that renders user-provided HTML. Vibecheck fires:
+
+---
+
+This renders the message field directly into the DOM using innerHTML. The non-obvious part: `DOMPurify.sanitize()` is called before insertion, which strips dangerous tags and attributes — but only if the content is a string. If `message` is undefined or null, `sanitize()` returns an empty string silently and nothing renders. There is no error, no fallback, just blank output.
+
+Makes sense, or want me to dig into any part?
+
+---
+
 ## Skip behavior
 
 If the user replies with any of the following, respect it immediately and continue without explanation:
