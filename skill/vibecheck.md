@@ -1,0 +1,6 @@
+---
+name: vibecheck
+description: Use after writing any implementation block — automatically narrates what non-obvious code does in plain English so the developer understands it before moving on. Fires silently on trivial changes.
+---
+
+# vibecheck
