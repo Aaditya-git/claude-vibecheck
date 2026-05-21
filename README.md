@@ -33,3 +33,17 @@ Makes sense, or want me to dig into any part?
 ```
 
 You now know your auth works. You know where it doesn't. You can debug it when something goes wrong.
+
+## Install
+
+```bash
+git clone https://github.com/your-username/claude-vibecheck
+cd claude-vibecheck
+
+# Symlink (recommended — picks up updates automatically)
+ln -s "$(pwd)/skill" ~/.claude/skills/vibecheck
+```
+
+Restart Claude Code. That's it.
+
+See [INSTALL.md](INSTALL.md) for full instructions and uninstall steps.
