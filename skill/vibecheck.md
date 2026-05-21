@@ -25,3 +25,14 @@ After every implementation block you write, silently evaluate:
 - Edge cases that affect correctness but aren't visible in the happy path
 - Database transactions, rollback behavior
 - Security-sensitive operations (XSS prevention, input sanitization, rate limiting)
+
+### Stay silent on
+
+- Typo and spelling fixes
+- Variable or function renames
+- Formatting and whitespace changes
+- Adding or removing console.log / debug statements
+- Trivial one-liners where intent is obvious from the name
+- Comment additions or updates
+- Import statement changes
+- Config value updates (changing a port number, a string constant)
