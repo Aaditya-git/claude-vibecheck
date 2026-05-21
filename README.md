@@ -47,3 +47,17 @@ ln -s "$(pwd)/skill" ~/.claude/skills/vibecheck
 Restart Claude Code. That's it.
 
 See [INSTALL.md](INSTALL.md) for full instructions and uninstall steps.
+
+## FAQ
+
+**Won't this be annoying?**
+Only if you're okay not understanding the code you ship. vibecheck only fires on genuinely non-obvious code — trivial changes pass through silently. And you can always type `skip`.
+
+**Why not just ask Claude to explain in chat?**
+You have to remember to ask. And the people who most need this explanation are the ones who never ask. vibecheck fires whether or not you thought to request it.
+
+**Does this slow down my workflow?**
+Reading 4 sentences takes 15 seconds. Debugging code you didn't understand takes hours.
+
+**What counts as non-obvious?**
+Auth flows, async race conditions, middleware chains, silent failure modes, state mutations with side effects, database transactions. Not renames, not formatting, not console.log.
