@@ -95,3 +95,9 @@ This wraps the user creation and wallet initialization in a single transaction s
 Makes sense, or want me to dig into any part?
 
 ---
+
+### Trivial rename — no narration
+
+Claude renames `getUserData` to `fetchUser`. Vibecheck stays silent. No narration is written. The change is obvious from reading it.
+
+---
