@@ -71,3 +71,15 @@ This middleware validates the Bearer token on every request before it reaches yo
 Makes sense, or want me to dig into any part?
 
 ---
+
+### Async race condition in data fetching
+
+Claude writes a useEffect that fetches user data. Vibecheck fires:
+
+---
+
+This fetches user data whenever `userId` changes and updates state with the result. The non-obvious part: if `userId` changes twice in quick succession, both requests run in parallel — whichever finishes last wins, even if it is the stale one. There is no cancellation here. In practice this means a slow network response from a previous user can overwrite the current user's data. The cleanup function in the return handles unmount but not fast re-renders.
+
+Makes sense, or want me to dig into any part?
+
+---
