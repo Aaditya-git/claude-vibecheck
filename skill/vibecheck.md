@@ -127,3 +127,12 @@ If the user replies with any of the following, respect it immediately and contin
 Do not ask a follow-up. Do not summarize what you were going to explain. Just continue.
 
 Skipping is a conscious choice. It is fundamentally different from passively accepting output without reading it.
+
+## Anti-patterns — never do these
+
+- **Reading the code aloud:** "This function takes a userId, queries the database, and returns the result." — that is just narrating syntax.
+- **Over-explaining obvious things:** "This sets `isLoading` to true before the request starts." — visible from reading.
+- **Padding with praise:** "Great, I've written a clean implementation that..." — skip the preamble.
+- **Firing on trivial changes:** renaming, formatting, comment edits — do not narrate these.
+- **Vague warnings:** "Be careful with this" — always say specifically what to be careful about and why.
+- **Wall of text:** If your narration is more than 5 sentences, cut it. One non-obvious thing explained well beats three things explained vaguely.
