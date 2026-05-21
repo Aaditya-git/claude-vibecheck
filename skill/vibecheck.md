@@ -101,3 +101,15 @@ Makes sense, or want me to dig into any part?
 Claude renames `getUserData` to `fetchUser`. Vibecheck stays silent. No narration is written. The change is obvious from reading it.
 
 ---
+
+### React state mutation
+
+Claude writes a handler that updates nested state. Vibecheck fires:
+
+---
+
+This updates the user's address inside the profile object. The non-obvious part: it spreads the top-level `profile` object but replaces `address` entirely — any fields inside the old `address` that you do not explicitly include will be lost. If `address` previously had a `verified` flag, it disappears silently after this update runs.
+
+Makes sense, or want me to dig into any part?
+
+---
