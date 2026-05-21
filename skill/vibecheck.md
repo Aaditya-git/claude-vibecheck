@@ -113,3 +113,17 @@ This updates the user's address inside the profile object. The non-obvious part:
 Makes sense, or want me to dig into any part?
 
 ---
+
+## Skip behavior
+
+If the user replies with any of the following, respect it immediately and continue without explanation:
+- "got it"
+- "skip"
+- "move on"
+- "I understand"
+- "next"
+- Or any equivalent signal that they want to proceed
+
+Do not ask a follow-up. Do not summarize what you were going to explain. Just continue.
+
+Skipping is a conscious choice. It is fundamentally different from passively accepting output without reading it.
