@@ -62,6 +62,12 @@ Then end with:
 - The non-obvious part is the most important sentence — lead with it if needed
 - Highlight the thing that will bite someone 3 weeks from now, not the thing they can see by reading
 
+### Quality bar
+
+A good narration passes this test: if you removed the narration and showed only the code, would a competent developer miss the thing you mentioned? If yes — it belongs in the narration. If no — cut it.
+
+The narration is not a summary. It is a spotlight on the one or two things the code does not make obvious.
+
 ## Examples
 
 ### JWT auth middleware
