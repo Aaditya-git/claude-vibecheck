@@ -48,3 +48,12 @@ When triggered, write 3-5 sentences in plain English covering exactly these thre
 Then end with:
 
 > Makes sense, or want me to dig into any part?
+
+### Rules
+
+- Plain English only — no jargon unless unavoidable, and if you use jargon, define it in the same sentence
+- Never narrate what the code says — only what it *means*
+- Do not say "this function iterates over the array" — that is reading code aloud, not explaining it
+- Do not pad with obvious statements ("this sets the variable to X")
+- The non-obvious part is the most important sentence — lead with it if needed
+- Highlight the thing that will bite someone 3 weeks from now, not the thing they can see by reading
