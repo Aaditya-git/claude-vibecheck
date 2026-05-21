@@ -57,3 +57,17 @@ Then end with:
 - Do not pad with obvious statements ("this sets the variable to X")
 - The non-obvious part is the most important sentence — lead with it if needed
 - Highlight the thing that will bite someone 3 weeks from now, not the thing they can see by reading
+
+## Examples
+
+### JWT auth middleware
+
+Claude writes 35 lines of auth middleware. Vibecheck fires:
+
+---
+
+This middleware validates the Bearer token on every request before it reaches your route handlers. Valid token → passes through. The non-obvious part: expired tokens return 401 silently — there is no refresh attempt here. That is intentional (refresh is the client's job), but if you expect silent token renewal, requests will start failing without an obvious error message to trace.
+
+Makes sense, or want me to dig into any part?
+
+---
