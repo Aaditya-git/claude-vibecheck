@@ -4,16 +4,22 @@
 
 - Claude Code (any version)
 
-## Install
+## Install via Claude Code (recommended)
 
-Option 1: copy (static snapshot)
 ```bash
-cp -r skill/ ~/.claude/skills/vibecheck/
+claude plugins install github:Aaditya-git/claude-vibecheck
 ```
 
-Option 2: symlink (picks up updates automatically)
+That's it. Restart Claude Code.
+
+## Manual install (alternative)
+
 ```bash
-ln -s "$(pwd)/skill" ~/.claude/skills/vibecheck
+git clone https://github.com/Aaditya-git/claude-vibecheck
+cd claude-vibecheck
+
+# Symlink (picks up updates automatically)
+ln -s "$(pwd)/skills" ~/.claude/skills/vibecheck
 ```
 
 Restart Claude Code after installing.
@@ -21,5 +27,9 @@ Restart Claude Code after installing.
 ## Uninstall
 
 ```bash
+# If installed via claude plugins
+claude plugins uninstall vibecheck
+
+# If installed manually
 rm -rf ~/.claude/skills/vibecheck
 ```

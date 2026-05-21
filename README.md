@@ -37,16 +37,12 @@ You now know your auth works. You know where it doesn't. You can debug it when s
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-vibecheck
-cd claude-vibecheck
-
-# Symlink (recommended — picks up updates automatically)
-ln -s "$(pwd)/skill" ~/.claude/skills/vibecheck
+claude plugins install github:Aaditya-git/claude-vibecheck
 ```
 
 Restart Claude Code. That's it.
 
-See [INSTALL.md](INSTALL.md) for full instructions and uninstall steps.
+See [INSTALL.md](INSTALL.md) for manual install and uninstall steps.
 
 ## FAQ
 
