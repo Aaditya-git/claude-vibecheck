@@ -83,3 +83,15 @@ This fetches user data whenever `userId` changes and updates state with the resu
 Makes sense, or want me to dig into any part?
 
 ---
+
+### Database transaction with rollback
+
+Claude writes a multi-step DB transaction. Vibecheck fires:
+
+---
+
+This wraps the user creation and wallet initialization in a single transaction so both succeed or neither does. The non-obvious part: if the wallet creation fails, the transaction rolls back the user row too — you will not end up with a user who has no wallet. What is easy to miss: any error thrown inside the transaction block triggers rollback automatically, but errors thrown *after* `commit()` do not. Post-commit side effects like sending a welcome email are outside the safety net.
+
+Makes sense, or want me to dig into any part?
+
+---
