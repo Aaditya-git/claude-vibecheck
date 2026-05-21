@@ -16,7 +16,7 @@ If **yes** → vibecheck narrates it in plain English: what it does, what's non-
 
 If **no** → complete silence. Trivial changes pass through without interruption.
 
-You can always type `skip` or `got it` to move on. Skipping is a conscious choice — fundamentally different from passively clicking yes without reading.
+You can always type `skip` or `got it` to move on. Skipping is a conscious choice — fundamentally different from passively scrolling past output you didn't read.
 
 ## Example
 
@@ -37,7 +37,7 @@ You now know your auth works. You know where it doesn't. You can debug it when s
 ## Install
 
 ```bash
-git clone https://github.com/your-username/claude-vibecheck
+git clone https://github.com/YOUR_USERNAME/claude-vibecheck
 cd claude-vibecheck
 
 # Symlink (recommended — picks up updates automatically)
@@ -54,7 +54,7 @@ See [INSTALL.md](INSTALL.md) for full instructions and uninstall steps.
 Only if you're okay not understanding the code you ship. vibecheck only fires on genuinely non-obvious code — trivial changes pass through silently. And you can always type `skip`.
 
 **Why not just ask Claude to explain in chat?**
-You have to remember to ask. And the people who most need this explanation are the ones who never ask. vibecheck fires whether or not you thought to request it.
+You have to remember to ask. The people who most need the explanation are the ones who never ask. vibecheck fires automatically — no request required.
 
 **Does this slow down my workflow?**
 Reading 4 sentences takes 15 seconds. Debugging code you didn't understand takes hours.
