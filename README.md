@@ -44,6 +44,29 @@ Restart Claude Code. That's it.
 
 See [INSTALL.md](INSTALL.md) for manual install and uninstall steps.
 
+## Disabling vibecheck
+
+**Skip a single narration** — type `skip`, `got it`, or `move on` and vibecheck will respect it immediately.
+
+**Disable for a specific project** — add this line to the project's `CLAUDE.md`:
+```
+Do not use the vibecheck skill in this project.
+```
+
+**Disable globally for a session** — tell Claude at the start of the conversation:
+```
+Disable vibecheck for this session.
+```
+
+**Uninstall completely:**
+```bash
+# If installed via claude plugins
+claude plugins uninstall vibecheck
+
+# If installed manually
+rm -rf ~/.claude/skills/vibecheck
+```
+
 ## FAQ
 
 **Won't this be annoying?**
