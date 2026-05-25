@@ -37,7 +37,8 @@ You now know your auth works. You know where it doesn't. You can debug it when s
 ## Install
 
 ```bash
-claude plugins install github:Aaditya-git/claude-vibecheck
+claude plugins marketplace add github:Aaditya-git/claude-vibecheck
+claude plugins install vibecheck
 ```
 
 Restart Claude Code. That's it.

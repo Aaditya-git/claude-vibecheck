@@ -7,10 +7,11 @@
 ## Install via Claude Code (recommended)
 
 ```bash
-claude plugins install github:Aaditya-git/claude-vibecheck
+claude plugins marketplace add github:Aaditya-git/claude-vibecheck
+claude plugins install vibecheck
 ```
 
-That's it. Restart Claude Code.
+Restart Claude Code.
 
 ## Manual install (alternative)
 
